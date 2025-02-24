@@ -1,0 +1,10 @@
+.recipes {
+    --primary-color: blue;
+    --font-weight:800;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-weight: var(--font-weight);
+    
+  }

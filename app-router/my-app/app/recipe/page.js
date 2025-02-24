@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
+import styles from './recipe.module.css'
 export default function Page(){
     const[data,setdata]=useState([])
     useEffect(()=>{
@@ -10,7 +11,7 @@ export default function Page(){
         
     },[])
     return(
-       <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
+       <div className={styles.recipes}>
          {
             data.map((item)=>(
                 <div key={item.id} >
